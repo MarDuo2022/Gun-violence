@@ -17,7 +17,6 @@ CREATE TABLE children_casualty (
 	Address varchar,
 	Killed int,
 	Injured int,
-	Record_type varchar NOT NULL,
 	PRIMARY KEY (Incident_ID),
 	FOREIGN KEY (Incident_ID) REFERENCES mass_shooting_master (Incident_ID)
 );
@@ -30,7 +29,6 @@ CREATE TABLE teen_casualty (
 	Address varchar,
 	Killed int,
 	Injured int,
-	Record_type varchar NOT NULL,
 	PRIMARY KEY (Incident_ID),
 	FOREIGN KEY (Incident_ID) REFERENCES mass_shooting_master (Incident_ID)
 );
