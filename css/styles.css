@@ -7,7 +7,7 @@
     padding: 15px; 
     font-weight: bold;
     color: white;
-    background-color: #0a1ad3;
+    background-color: rgb(112, 0, 0);
     font-family: Georgia, 'Times New Roman', Times, serif;
   }
 
@@ -16,12 +16,16 @@
     font-size: 15px; 
   }
 
+  .active, .dropdown-menu .dropdown-item:active a:hover{
+    background-color:white; 
+  }
+
   .dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:hover{
-    background-color: #0a1ad3;
+    background-color: rgb(112, 0, 0);
   }
 
   .nav-link:hover{
-    background-color: #0a1ad3;
+    background-color: rgb(112, 0, 0);
   }
 
 /* Body*/
@@ -34,28 +38,14 @@ body {
 
 /* Title Class*/
 .title {
-  color: #0a1ad3;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(112, 0, 0);
+  font-family: Baskerville,Baskerville Old Face,Hoefler Text,Garamond,Times New Roman,serif;
   font-weight: bolder;
   padding-top: 25px;
 }
 
 div div div div div div.title{font-size:20px; text-align: center;}
 
-/* Body*/
-h3{
-  font-size: 25px;
-}
-body {
-  background-color: whitesmoke;
-}
-/* Title Class*/
-.title {
-  color: #0a1ad3;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-weight: bolder;
-  padding-top: 25px;
-}
 /* Paragraph */
 p {
   color: black;
@@ -72,10 +62,36 @@ p {
 
 }
 
+/* Images */
+img {
+  width:70%;
+  height:70%;
+  margin-right: 20px;
+}
+  .indeximage{width:40%; height:40%}
+
+.panel{width:100%; height:100%}
+
+.active, .panel:hover{
+  border-color:rgb(112, 0, 0);
+  border-style: solid;
+}
+
+/* Table*/
+.table {
+  font-size: 15px;
+  text-align: center;
+}
+
+th{
+text-align: center;
+vertical-align: middle;
+}
+
 /* Media Queries */
 @media(max-width: 900px){
   .navbar-expand-lg{
-  background-color: #0a1ad3;
+  background-color: rgb(112, 0, 0);
   }
   .navbar{
     max-height: none; 
@@ -98,3 +114,5 @@ p {
       outline: 5px auto -webkit-focusring-color;               
     }
   }
+
+  /* break */
